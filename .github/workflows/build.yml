@@ -3,13 +3,13 @@ on:
   push:
     branches:
       - 'main'
-      - 'feature/**'
+      - 'mybranch1'
       
 jobs:
   greet:
-    runs-on: [atc-ubuntu-latest]
+    runs-on: [ubuntu-latest]
     steps:
       - name: say hi
         run: |
-          echo "Hello World1"
+          echo "Hello World2"
    
