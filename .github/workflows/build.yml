@@ -4,6 +4,8 @@ on:
     branches:
       - 'main'
       - 'mybranch1'
+    paths:
+      - 'src/*.py'
       
 jobs:
   greet:
