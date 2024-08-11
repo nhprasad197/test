@@ -5,7 +5,7 @@ on:
       - 'main'
       - 'mybranch1'
     paths:
-      - 'src/**.py'
+      src/**.py
       
 jobs:
   greet:
