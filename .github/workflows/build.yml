@@ -17,5 +17,5 @@ jobs:
           echo "Hello World2"
           pwd
           ls -l ..
-          python ../src/hello.py
+          python src/hello.py
    
