@@ -14,5 +14,6 @@ jobs:
       - name: say hi
         run: |
           echo "Hello World2"
-          python src/hello.py
+          pwd
+          python ../src/hello.py
    
