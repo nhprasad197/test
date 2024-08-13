@@ -3,13 +3,19 @@ on:
   push:
     branches:
       - 'main'
-      - 'feature/**'
+      - 'mybranch1'
       
 jobs:
   greet:
-    runs-on: [atc-ubuntu-latest]
+    runs-on: [ubuntu-latest]
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
       - name: say hi
         run: |
-          echo "Hello World1"
+          ls -l
+          echo "Hello World2"
+          pwd
+          ls -l ..
+          python src/hello.py
    
